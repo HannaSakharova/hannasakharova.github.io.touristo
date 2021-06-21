@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Home</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/chosen.css">
+	<!-- <meta name="robots" content="noindex, nofollow" /> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- @import "header.html" -->
+		<section class="mainblock">
+			<div class="mainblock__content">
+				<div class="mainblock__container ">
+					<h1 class="mainblock__title">Куди відправимось?</h1>
+					<div class="mainblock__subtitle">Ви можете здійснити пошук по декільком напрямкам одночасно</div>
+					<div class="mainblock__search">
+						<div class="select-box">
+							<div class="options-container">
+								<div class="option">
+									<input type="radio" class="radio" id="Єгипет" name="country">
+									<label for="Єгипет">Єгипет</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Туреччина" name="country">
+									<label for="Туреччина">Туреччина</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Болгарія" name="country">
+									<label for="Болгарія">Болгарія</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Норвегія" name="country">
+									<label for="Норвегія">Норвегія</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Кіпр" name="country">
+									<label for="Кіпр">Кіпр</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="ОАЕ" name="country">
+									<label for="ОАЕ">ОАЕ</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Чорногорія" name="country">
+									<label for="Чорногорія">Чорногорія</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Домінікана" name="country">
+									<label for="Домінікана">Домінікана</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Мальдіви" name="country">
+									<label for="Мальдіви">Мальдіви</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Іспанія" name="country">
+									<label for="Іспанія">Іспанія</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Італія" name="country">
+									<label for="Італія">Італія</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Франція" name="country">
+									<label for="Франція">Франція</label>
+								</div>
+								<div class="option">
+									<input type="radio" class="radio" id="Тайланд" name="country">
+									<label for="Тайланд">Тайланд</label>
+								</div>
+							</div>
+							<div class="selected">Країна, місто, регіон, готель</div>
+							<div class="search-box">
+								<input type="text" placeholder="Введіть назву країни, курорту або готелю">
+							</div>
+						</div>
+					</div>
+					<div class="mainblock__parameters parameters-search parameters-search-1">
+						<button class="parameters-search__title">Розширений пошук</button>
+					</div>
+					<div class="parameters-search__content search-parameters">
+						<div class="search-parameters__column search-parameters__column-1">
+							<div class="search-parameters__date">
+								<button class="mainblock__btn mainblock__btn-2"><img src="img/icons/calendar.png"
+										alt="Calendar"></button>
+								<input type="text" class="datepicker-here input-date" data-position="right top"
+									data-range="true" data-multiple-dates-separator=" - " placeholder="Дата">
+							</div>
+							<div class="search-parameters__days">
+								<div class="slider__name">Тривалість</div>
+								<div class="slider-wrapper">
+									<div id="slider-range"></div>
+									<div class="range-wrapper">
+										<div class="range"></div>
+									</div>
+									<div class="marker marker-0">від 2 днів</div>
+									<div class="marker marker-100">до 60 днів</div>
+								</div>
+							</div>
+							<div class="search-parameters__people people">
+								<div class="spoiler__block">
+									<div class="spoiler__title">
+										<img src="img/icons/human.png" alt="Human">
+										<p>Кількість подорожуючих</p>
+										<i class="fas fa-chevron-down"></i>
+									</div>
+									<div class="spoiler__content">
+										<div class="spoiler__content-1">
+											<div class="spoiler__name">Дорослих</div>
+											<div class="spoiler__people">
+												<div class="spoiler__amount spoiler__amount-adults" id="amount-adults">0</div>
+												<button class="spoiler__btn" id="spoiler-subtrack-adults"></button>
+												<button class="spoiler__btn" id="spoiler-add-adults"></button>
+											</div>
+										</div>
+										<div class="spoiler__content-2">
+											<div class="spoiler__name">Дітей</div>
+											<div class="spoiler__people">
+												<div class="spoiler__amount spoiler__amount-kids" id="amount-kids">0</div>
+												<button class="spoiler__btn" id="spoiler-subtrack-kids"></button>
+												<button class="spoiler__btn" id="spoiler-add-kids"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search-parameters__column search-parameters__column-2">
+							<div class="search-parameters__btn">
+								<button class="parameters-search__title">Сховати</button>
+							</div>
+						</div>
+					</div>
+					<div class="mainblock__tour">
+						<a href="#" class="mainblock__tour-btn btn-tour">Знайти
+							подорожі</a>
+					</div>
+					<div class="mainblock__call">
+						<a href="#popup">
+							<img src="img/icons/phone-with-bg.png" alt="Phone">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="mainblock__img ibg">
+				<img src="img/mainblock/bcg-main.jpg" alt="">
+			</div>
+		</section>
+		<section class="content">
+			<div class="travel__sale">
+				<div class="travel__sale-container">
+					<div class="travel__tabs tabs">
+						<div class="tabs__title">Розпродаж подорожей</div>
+						<nav class="tabs__items">
+							<a href="#tab_01" class="tabs__item">Всі країни</a>
+							<a href="#tab_01" class="tabs__item">Екскрусійні тури</a>
+							<a href="#tab_01" class="tabs__item">Туреччина</a>
+							<a href="#tab_01" class="tabs__item">Єгипет</a>
+							<a href="#tab_01" class="tabs__item">ОАЕ</a>
+							<a href="#tab_01" class="tabs__item">Шрі Ланка</a>
+							<a href="#tab_01" class="tabs__item">Домінікана</a>
+							<a href="#tab_01" class="tabs__item">Тайланд</a>
+							<a href="#tab_01" class="tabs__item">Греція</a>
+							<a href="#tab_01" class="tabs__item">Куба</a>
+							<a href="#tab_01" class="tabs__item">Мальдіви</a>
+						</nav>
+						<div class="tabs__body">
+							<div id="tab_01" class="tabs__content">
+								<div class="tabs__post travel-post">
+									<div class="travel-post__status">Розпродаж</div>
+									<div class="travel-post__img travel-img"><img src="img/travel-sale/01.jpg" alt="Єгипет">
+									</div>
+									<div class="travel-post__body">
+										<div class="travel-post__id">id: 103980</div>
+										<div class="travel-post__hotel">Sunrise Marina Port Ghalib 5*</div>
+										<div class="travel-post__country">Єгипет, Шарм Ель Шейк</div>
+										<div class="travel-post__date">16-26 листопада (20 ночей)</div>
+										<div class="travel-post__details details-travel">
+											<div class="details-travel__exit">
+												<div class="details-travel__visa">Без візи</div>
+												<div class="details-travel__departure">Виліт зі Львову</div>
+											</div>
+											<div class="details-travel__enter">
+												<div class="details-travel__hotel hotel-travel">
+													<div class="details-travel__label">Готель</div>
+													<div class="hotel-travel__rating">
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+													</div>
+												</div>
+												<div class="details-travel__food">
+													<div class="details-travel__label">Харчування</div>
+													<div class="details-travel__feeding">Ultra All-Inclusive</div>
+												</div>
+											</div>
+										</div>
+										<div class="travel-post__cost cost-travel">
+											<div class="cost-travel__all"><span>22 649</span> ₴ / особу</div>
+											<div class="cost-travel__day">678 €</div>
+										</div>
+										<div class="travel-post__check">
+											<input type="checkbox" name="" id="check-tavel-01"><label for="check-tavel-01">Додати
+												до
+												порівняння</label>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__post travel-post">
+									<div class="travel-post__status">Розпродаж</div>
+									<div class="travel-post__img travel-img"><img src="img/travel-sale/02.jpg"
+											alt="Чехія, Угорщина"></div>
+									<div class="travel-post__body">
+										<div class="travel-post__id">id: 103935</div>
+										<div class="travel-post__hotel">Вихідні в Празі</div>
+										<div class="travel-post__country">Чехія, Прага / Угорщина, Будапешт</div>
+										<div class="travel-post__date">09-12 лютого (3 ночі)</div>
+										<div class="travel-post__details details-travel">
+											<div class="details-travel__exit">
+												<div class="details-travel__visa">Без візи</div>
+												<div class="details-travel__departure details-travel__departure-bus">Виїзд з
+													Києва
+												</div>
+											</div>
+											<div class="details-travel__enter">
+												<div class="details-travel__hotel hotel-travel">
+													<div class="details-travel__label">Готель</div>
+													<div class="hotel-travel__rating">
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="details-travel__food">
+													<div class="details-travel__label">Харчування</div>
+													<div class="details-travel__feeding">Сніданки</div>
+												</div>
+											</div>
+										</div>
+										<div class="travel-post__cost cost-travel">
+											<div class="cost-travel__all"><span>1 235</span> ₴ / особу</div>
+											<div class="cost-travel__day">45 €</div>
+										</div>
+										<div class="travel-post__check">
+											<input type="checkbox" name="" id="check-tavel-02"><label for="check-tavel-02">Додати
+												до порівняння</label>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__post travel-post">
+									<div class="travel-post__status">Розпродаж</div>
+									<div class="travel-post__img travel-img"><img src="img/travel-sale/03.jpg" alt="Балі">
+									</div>
+									<div class="travel-post__body">
+										<div class="travel-post__id">id: 103458</div>
+										<div class="travel-post__hotel">Golden Beach Palms Resort 4*</div>
+										<div class="travel-post__country">Балі, Денпасар</div>
+										<div class="travel-post__date">16-26 листопада (20 ночей)</div>
+										<div class="travel-post__details details-travel">
+											<div class="details-travel__exit">
+												<div class="details-travel__visa">Без візи</div>
+												<div class="details-travel__departure">Виліт з Одеси</div>
+											</div>
+											<div class="details-travel__enter">
+												<div class="details-travel__hotel hotel-travel">
+													<div class="details-travel__label">Готель</div>
+													<div class="hotel-travel__rating">
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="details-travel__food">
+													<div class="details-travel__label">Харчування</div>
+													<div class="details-travel__feeding">Сніданки + вечері</div>
+												</div>
+											</div>
+										</div>
+										<div class="travel-post__cost cost-travel">
+											<div class="cost-travel__all"><span>32 500</span> ₴ / особу</div>
+											<div class="cost-travel__day">975 €</div>
+										</div>
+										<div class="travel-post__check">
+											<input type="checkbox" name="" id="check-tavel-03"><label for="check-tavel-03">Додати
+												до
+												порівняння</label>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__post travel-post">
+									<div class="travel-post__status">Розпродаж</div>
+									<div class="travel-post__img travel-img"><img src="img/travel-sale/04.jpg"
+											alt="Чехія, Угорщина"></div>
+									<div class="travel-post__body">
+										<div class="travel-post__id">id: 102589</div>
+										<div class="travel-post__hotel">Галопом по Європах</div>
+										<div class="travel-post__country">Чехія, Прага / Угорщина, Будапешт</div>
+										<div class="travel-post__date">16-21 листопада (4 ночі)</div>
+										<div class="travel-post__details details-travel">
+											<div class="details-travel__exit">
+												<div class="details-travel__visa">Без візи</div>
+												<div class="details-travel__departure">Виліт зі Львову</div>
+											</div>
+											<div class="details-travel__enter">
+												<div class="details-travel__hotel hotel-travel">
+													<div class="details-travel__label">Готель</div>
+													<div class="hotel-travel__rating">
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+													</div>
+												</div>
+												<div class="details-travel__food">
+													<div class="details-travel__label">Харчування</div>
+													<div class="details-travel__feeding">Сніданки + вечері</div>
+												</div>
+											</div>
+										</div>
+										<div class="travel-post__cost cost-travel">
+											<div class="cost-travel__all"><span>3 649</span> ₴ / особу</div>
+											<div class="cost-travel__day">109 € €</div>
+										</div>
+										<div class="travel-post__check">
+											<input type="checkbox" name="" id="check-tavel-04"><label for="check-tavel-04">Додати
+												до
+												порівняння</label>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__post travel-post">
+									<div class="travel-post__status">Розпродаж</div>
+									<div class="travel-post__img travel-img"><img src="img/travel-sale/05.jpg"
+											alt="Чехія, Угорщина"></div>
+									<div class="travel-post__body">
+										<div class="travel-post__id">id: 108542</div>
+										<div class="travel-post__hotel">Галопом по Європах</div>
+										<div class="travel-post__country">Чехія, Прага / Угорщина, Будапешт</div>
+										<div class="travel-post__date">16-23 листопада (8 ночей)</div>
+										<div class="travel-post__details details-travel">
+											<div class="details-travel__exit">
+												<div class="details-travel__visa">Без візи</div>
+												<div class="details-travel__departure">Виліт зі Львову</div>
+											</div>
+											<div class="details-travel__enter">
+												<div class="details-travel__hotel hotel-travel">
+													<div class="details-travel__label">Готель</div>
+													<div class="hotel-travel__rating">
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span></span>
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="details-travel__food">
+													<div class="details-travel__label">Харчування</div>
+													<div class="details-travel__feeding">Сніданки + вечері</div>
+												</div>
+											</div>
+										</div>
+										<div class="travel-post__cost cost-travel">
+											<div class="cost-travel__all"><span>2 649</span> ₴ / особу</div>
+											<div class="cost-travel__day">80 €</div>
+										</div>
+										<div class="travel-post__check">
+											<input type="checkbox" name="" id="check-tavel-05"><label for="check-tavel-05">Додати
+												до
+												порівняння</label>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__post travel-post">
+									<div class="travel-post__status">Розпродаж</div>
+									<div class="travel-post__img travel-img"><img src="img/travel-sale/06.jpg" alt="Єгипет">
+									</div>
+									<div class="travel-post__body">
+										<div class="travel-post__id">id: 108575</div>
+										<div class="travel-post__hotel">Sunrise Marina Port Ghalib 5*</div>
+										<div class="travel-post__country">Єгипет, Шарм Ель Шейк</div>
+										<div class="travel-post__date">16-26 листопада (20 ночей)</div>
+										<div class="travel-post__details details-travel">
+											<div class="details-travel__exit">
+												<div class="details-travel__visa">Без візи</div>
+												<div class="details-travel__departure">Виліт зі Львову</div>
+											</div>
+											<div class="details-travel__enter">
+												<div class="details-travel__hotel hotel-travel">
+													<div class="details-travel__label">Готель</div>
+													<div class="hotel-travel__rating">
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+													</div>
+												</div>
+												<div class="details-travel__food">
+													<div class="details-travel__label">Харчування</div>
+													<div class="details-travel__feeding">Ultra All-Inclusive</div>
+												</div>
+											</div>
+										</div>
+										<div class="travel-post__cost cost-travel">
+											<div class="cost-travel__all"><span>32 500</span> ₴ / особу</div>
+											<div class="cost-travel__day">975 €</div>
+										</div>
+										<div class="travel-post__check">
+											<input type="checkbox" name="" id="check-tavel-06"><label for="check-tavel-06">Додати
+												до
+												порівняння</label>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__post travel-post">
+									<div class="travel-post__status">Розпродаж</div>
+									<div class="travel-post__img travel-img"><img src="img/travel-sale/07.jpg"
+											alt="Чехія, Угорщина"></div>
+									<div class="travel-post__body">
+										<div class="travel-post__id">id: 109575</div>
+										<div class="travel-post__hotel">Вихідні в Празі</div>
+										<div class="travel-post__country">Чехія, Прага / Угорщина, Будапешт</div>
+										<div class="travel-post__date">09-12 лютого (3 ночі)</div>
+										<div class="travel-post__details details-travel">
+											<div class="details-travel__exit">
+												<div class="details-travel__visa">Без візи</div>
+												<div class="details-travel__departure details-travel__departure-bus">Виїзд зі
+													Львову
+												</div>
+											</div>
+											<div class="details-travel__enter">
+												<div class="details-travel__hotel hotel-travel">
+													<div class="details-travel__label">Готель</div>
+													<div class="hotel-travel__rating">
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="details-travel__food">
+													<div class="details-travel__label">Харчування</div>
+													<div class="details-travel__feeding">Сніданки</div>
+												</div>
+											</div>
+										</div>
+										<div class="travel-post__cost cost-travel">
+											<div class="cost-travel__all"><span>1 235</span> ₴ / особу</div>
+											<div class="cost-travel__day"> 37 €</div>
+										</div>
+										<div class="travel-post__check">
+											<input type="checkbox" name="" id="check-tavel-07"><label for="check-tavel-07">Додати
+												до
+												порівняння</label>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__post travel-post">
+									<div class="travel-post__status">Розпродаж</div>
+									<div class="travel-post__img travel-img"><img src="img/travel-sale/08.jpg" alt="Балі">
+									</div>
+									<div class="travel-post__body">
+										<div class="travel-post__id">id: 109725</div>
+										<div class="travel-post__hotel">Golden Beach Palms Resort 4*</div>
+										<div class="travel-post__country">Балі, Денпасар</div>
+										<div class="travel-post__date">16-26 листопада (20 ночей)</div>
+										<div class="travel-post__details details-travel">
+											<div class="details-travel__exit">
+												<div class="details-travel__visa">Без візи</div>
+												<div class="details-travel__departure details-travel__departure-train">Виїзд зі
+													Львову
+												</div>
+											</div>
+											<div class="details-travel__enter">
+												<div class="details-travel__hotel hotel-travel">
+													<div class="details-travel__label">Готель</div>
+													<div class="hotel-travel__rating">
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span class="active-star"></span>
+														<span></span>
+													</div>
+												</div>
+												<div class="details-travel__food">
+													<div class="details-travel__label">Харчування</div>
+													<div class="details-travel__feeding">Сніданки + вечері</div>
+												</div>
+											</div>
+										</div>
+										<div class="travel-post__cost cost-travel">
+											<div class="cost-travel__all"><span>3 000</span> ₴ / особу</div>
+											<div class="cost-travel__day"> 90 € </div>
+										</div>
+										<div class="travel-post__check">
+											<input type="checkbox" name="" id="check-tavel-08"><label for="check-tavel-08">Додати
+												до
+												порівняння</label>
+										</div>
+									</div>
+								</div>
+								<div class="travel__sale-slider slider-travel">
+									<div class="slider-travel__item">
+										<div class="travel-post__status">Розпродаж</div>
+										<div class="travel-post__img travel-img"><img src="img/travel-sale/01.jpg" alt="Єгипет">
+										</div>
+										<div class="travel-post__body">
+											<div class="travel-post__id">id: 103980</div>
+											<div class="travel-post__hotel">Sunrise Marina Port Ghalib 5*</div>
+											<div class="travel-post__country">Єгипет, Шарм Ель Шейк</div>
+											<div class="travel-post__date">16-26 листопада (20 ночей)</div>
+											<div class="travel-post__details details-travel">
+												<div class="details-travel__exit">
+													<div class="details-travel__visa">Без візи</div>
+													<div class="details-travel__departure">Виліт зі Львову</div>
+												</div>
+												<div class="details-travel__enter">
+													<div class="details-travel__hotel hotel-travel">
+														<div class="details-travel__label">Готель</div>
+														<div class="hotel-travel__rating">
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+														</div>
+													</div>
+													<div class="details-travel__food">
+														<div class="details-travel__label">Харчування</div>
+														<div class="details-travel__feeding">Ultra All-Inclusive</div>
+													</div>
+												</div>
+											</div>
+											<div class="travel-post__cost cost-travel">
+												<div class="cost-travel__all"><span>22 649</span> ₴ / особу</div>
+												<div class="cost-travel__day">678 €</div>
+											</div>
+											<div class="travel-post__check">
+												<input type="checkbox" name="" id="check-tavel-011"><label
+													for="check-tavel-011">Додати
+													до
+													порівняння</label>
+											</div>
+										</div>
+									</div>
+									<div class="slider-travel__item">
+										<div class="travel-post__status">Розпродаж</div>
+										<div class="travel-post__img travel-img"><img src="img/travel-sale/02.jpg"
+												alt="Чехія, Угорщина"></div>
+										<div class="travel-post__body">
+											<div class="travel-post__id">id: 103935</div>
+											<div class="travel-post__hotel">Вихідні в Празі</div>
+											<div class="travel-post__country">Чехія, Прага / Угорщина, Будапешт</div>
+											<div class="travel-post__date">09-12 лютого (3 ночі)</div>
+											<div class="travel-post__details details-travel">
+												<div class="details-travel__exit">
+													<div class="details-travel__visa">Без візи</div>
+													<div class="details-travel__departure details-travel__departure-bus">Виїзд з
+														Києва
+													</div>
+												</div>
+												<div class="details-travel__enter">
+													<div class="details-travel__hotel hotel-travel">
+														<div class="details-travel__label">Готель</div>
+														<div class="hotel-travel__rating">
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span></span>
+															<span></span>
+														</div>
+													</div>
+													<div class="details-travel__food">
+														<div class="details-travel__label">Харчування</div>
+														<div class="details-travel__feeding">Сніданки</div>
+													</div>
+												</div>
+											</div>
+											<div class="travel-post__cost cost-travel">
+												<div class="cost-travel__all"><span>1 235</span> ₴ / особу</div>
+												<div class="cost-travel__day">45 €</div>
+											</div>
+											<div class="travel-post__check">
+												<input type="checkbox" name="" id="check-tavel-022"><label
+													for="check-tavel-022">Додати
+													до порівняння</label>
+											</div>
+										</div>
+									</div>
+									<div class="slider-travel__item">
+										<div class="travel-post__status">Розпродаж</div>
+										<div class="travel-post__img travel-img"><img src="img/travel-sale/03.jpg" alt="Балі">
+										</div>
+										<div class="travel-post__body">
+											<div class="travel-post__id">id: 103458</div>
+											<div class="travel-post__hotel">Golden Beach Palms Resort 4*</div>
+											<div class="travel-post__country">Балі, Денпасар</div>
+											<div class="travel-post__date">16-26 листопада (20 ночей)</div>
+											<div class="travel-post__details details-travel">
+												<div class="details-travel__exit">
+													<div class="details-travel__visa">Без візи</div>
+													<div class="details-travel__departure">Виліт з Одеси</div>
+												</div>
+												<div class="details-travel__enter">
+													<div class="details-travel__hotel hotel-travel">
+														<div class="details-travel__label">Готель</div>
+														<div class="hotel-travel__rating">
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span></span>
+														</div>
+													</div>
+													<div class="details-travel__food">
+														<div class="details-travel__label">Харчування</div>
+														<div class="details-travel__feeding">Сніданки + вечері</div>
+													</div>
+												</div>
+											</div>
+											<div class="travel-post__cost cost-travel">
+												<div class="cost-travel__all"><span>32 500</span> ₴ / особу</div>
+												<div class="cost-travel__day">975 €</div>
+											</div>
+											<div class="travel-post__check">
+												<input type="checkbox" name="" id="check-tavel-033"><label
+													for="check-tavel-033">Додати
+													до
+													порівняння</label>
+											</div>
+										</div>
+									</div>
+									<div class="slider-travel__item">
+										<div class="travel-post__status">Розпродаж</div>
+										<div class="travel-post__img travel-img"><img src="img/travel-sale/04.jpg"
+												alt="Чехія, Угорщина"></div>
+										<div class="travel-post__body">
+											<div class="travel-post__id">id: 102589</div>
+											<div class="travel-post__hotel">Галопом по Європах</div>
+											<div class="travel-post__country">Чехія, Прага / Угорщина, Будапешт</div>
+											<div class="travel-post__date">16-21 листопада (4 ночі)</div>
+											<div class="travel-post__details details-travel">
+												<div class="details-travel__exit">
+													<div class="details-travel__visa">Без візи</div>
+													<div class="details-travel__departure">Виліт зі Львову</div>
+												</div>
+												<div class="details-travel__enter">
+													<div class="details-travel__hotel hotel-travel">
+														<div class="details-travel__label">Готель</div>
+														<div class="hotel-travel__rating">
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+														</div>
+													</div>
+													<div class="details-travel__food">
+														<div class="details-travel__label">Харчування</div>
+														<div class="details-travel__feeding">Сніданки + вечері</div>
+													</div>
+												</div>
+											</div>
+											<div class="travel-post__cost cost-travel">
+												<div class="cost-travel__all"><span>3 649</span> ₴ / особу</div>
+												<div class="cost-travel__day">109 € €</div>
+											</div>
+											<div class="travel-post__check">
+												<input type="checkbox" name="" id="check-tavel-044"><label
+													for="check-tavel-044">Додати
+													до
+													порівняння</label>
+											</div>
+										</div>
+									</div>
+									<div class="slider-travel__item">
+										<div class="travel-post__status">Розпродаж</div>
+										<div class="travel-post__img travel-img"><img src="img/travel-sale/05.jpg"
+												alt="Чехія, Угорщина"></div>
+										<div class="travel-post__body">
+											<div class="travel-post__id">id: 108542</div>
+											<div class="travel-post__hotel">Галопом по Європах</div>
+											<div class="travel-post__country">Чехія, Прага / Угорщина, Будапешт</div>
+											<div class="travel-post__date">16-23 листопада (8 ночей)</div>
+											<div class="travel-post__details details-travel">
+												<div class="details-travel__exit">
+													<div class="details-travel__visa">Без візи</div>
+													<div class="details-travel__departure">Виліт зі Львову</div>
+												</div>
+												<div class="details-travel__enter">
+													<div class="details-travel__hotel hotel-travel">
+														<div class="details-travel__label">Готель</div>
+														<div class="hotel-travel__rating">
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span></span>
+															<span></span>
+															<span></span>
+														</div>
+													</div>
+													<div class="details-travel__food">
+														<div class="details-travel__label">Харчування</div>
+														<div class="details-travel__feeding">Сніданки + вечері</div>
+													</div>
+												</div>
+											</div>
+											<div class="travel-post__cost cost-travel">
+												<div class="cost-travel__all"><span>2 649</span> ₴ / особу</div>
+												<div class="cost-travel__day">80 €</div>
+											</div>
+											<div class="travel-post__check">
+												<input type="checkbox" name="" id="check-tavel-055"><label
+													for="check-tavel-055">Додати
+													до
+													порівняння</label>
+											</div>
+										</div>
+									</div>
+									<div class="slider-travel__item">
+										<div class="travel-post__status">Розпродаж</div>
+										<div class="travel-post__img travel-img"><img src="img/travel-sale/06.jpg" alt="Єгипет">
+										</div>
+										<div class="travel-post__body">
+											<div class="travel-post__id">id: 108575</div>
+											<div class="travel-post__hotel">Sunrise Marina Port Ghalib 5*</div>
+											<div class="travel-post__country">Єгипет, Шарм Ель Шейк</div>
+											<div class="travel-post__date">16-26 листопада (20 ночей)</div>
+											<div class="travel-post__details details-travel">
+												<div class="details-travel__exit">
+													<div class="details-travel__visa">Без візи</div>
+													<div class="details-travel__departure">Виліт зі Львову</div>
+												</div>
+												<div class="details-travel__enter">
+													<div class="details-travel__hotel hotel-travel">
+														<div class="details-travel__label">Готель</div>
+														<div class="hotel-travel__rating">
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+														</div>
+													</div>
+													<div class="details-travel__food">
+														<div class="details-travel__label">Харчування</div>
+														<div class="details-travel__feeding">Ultra All-Inclusive</div>
+													</div>
+												</div>
+											</div>
+											<div class="travel-post__cost cost-travel">
+												<div class="cost-travel__all"><span>32 500</span> ₴ / особу</div>
+												<div class="cost-travel__day">975 €</div>
+											</div>
+											<div class="travel-post__check">
+												<input type="checkbox" name="" id="check-tavel-066"><label
+													for="check-tavel-066">Додати
+													до
+													порівняння</label>
+											</div>
+										</div>
+									</div>
+									<div class="slider-travel__item">
+										<div class="travel-post__status">Розпродаж</div>
+										<div class="travel-post__img travel-img"><img src="img/travel-sale/07.jpg"
+												alt="Чехія, Угорщина"></div>
+										<div class="travel-post__body">
+											<div class="travel-post__id">id: 109575</div>
+											<div class="travel-post__hotel">Вихідні в Празі</div>
+											<div class="travel-post__country">Чехія, Прага / Угорщина, Будапешт</div>
+											<div class="travel-post__date">09-12 лютого (3 ночі)</div>
+											<div class="travel-post__details details-travel">
+												<div class="details-travel__exit">
+													<div class="details-travel__visa">Без візи</div>
+													<div class="details-travel__departure details-travel__departure-bus">Виїзд зі
+														Львову
+													</div>
+												</div>
+												<div class="details-travel__enter">
+													<div class="details-travel__hotel hotel-travel">
+														<div class="details-travel__label">Готель</div>
+														<div class="hotel-travel__rating">
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span></span>
+														</div>
+													</div>
+													<div class="details-travel__food">
+														<div class="details-travel__label">Харчування</div>
+														<div class="details-travel__feeding">Сніданки</div>
+													</div>
+												</div>
+											</div>
+											<div class="travel-post__cost cost-travel">
+												<div class="cost-travel__all"><span>1 235</span> ₴ / особу</div>
+												<div class="cost-travel__day"> 37 €</div>
+											</div>
+											<div class="travel-post__check">
+												<input type="checkbox" name="" id="check-tavel-077"><label
+													for="check-tavel-077">Додати
+													до
+													порівняння</label>
+											</div>
+										</div>
+									</div>
+									<div class="slider-travel__item">
+										<div class="travel-post__status">Розпродаж</div>
+										<div class="travel-post__img travel-img"><img src="img/travel-sale/08.jpg" alt="Балі">
+										</div>
+										<div class="travel-post__body">
+											<div class="travel-post__id">id: 109725</div>
+											<div class="travel-post__hotel">Golden Beach Palms Resort 4*</div>
+											<div class="travel-post__country">Балі, Денпасар</div>
+											<div class="travel-post__date">16-26 листопада (20 ночей)</div>
+											<div class="travel-post__details details-travel">
+												<div class="details-travel__exit">
+													<div class="details-travel__visa">Без візи</div>
+													<div class="details-travel__departure details-travel__departure-train">Виїзд зі
+														Львову
+													</div>
+												</div>
+												<div class="details-travel__enter">
+													<div class="details-travel__hotel hotel-travel">
+														<div class="details-travel__label">Готель</div>
+														<div class="hotel-travel__rating">
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span class="active-star"></span>
+															<span></span>
+														</div>
+													</div>
+													<div class="details-travel__food">
+														<div class="details-travel__label">Харчування</div>
+														<div class="details-travel__feeding">Сніданки + вечері</div>
+													</div>
+												</div>
+											</div>
+											<div class="travel-post__cost cost-travel">
+												<div class="cost-travel__all"><span>3 000</span> ₴ / особу</div>
+												<div class="cost-travel__day"> 90 € </div>
+											</div>
+											<div class="travel-post__check">
+												<input type="checkbox" name="" id="check-tavel-088"><label
+													for="check-tavel-088">Додати
+													до
+													порівняння</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__btn">
+							<a href="#" class="tabs__link btn-tour btn-tour-t">Всі акційні подорожі</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mailing">
+				<div class="mailing__content">
+					<div class="mailing__title">Отримуйте найвигідніші пропозиції першими — підпишіться на нашу розсилку
+					</div>
+					<div class="mailing__method method-mailing">
+						<div class="method-mailing__email email-mailing">
+							<div class="email-mailing__title">По email: </div>
+							<div class="email-mailing__body">
+								<input type="email" class="email-mailing__input" placeholder="Ваша email адреса"><button
+									class="mailing__btn">Підписатись</button>
+							</div>
+						</div>
+						<div class="method-mailing__sms sms-mailing">
+							<div class="sms-mailing__title">По смс: </div>
+							<div class="sms-mailing__body">
+								<input type="tel" class="sms-mailing__input phone" placeholder="Ваш номер телефону"><button
+									class="mailing__btn">Підписатись</button>
+							</div>
+						</div>
+					</div>
+					<div class="mailing__method-tabs tabs-mailing">
+						<nav class="tabs-mailing__nav">
+							<a href="#tab_01-mailing" class="tabs-mailing__link">По email </a>
+							<a href="#tab_02-mailing" class="tabs-mailing__link">По смс </a>
+						</nav>
+						<div class="tabs-mailing__body">
+							<div id="tab_01-mailing" class="tabs-mailing__content">
+								<div class="tabs-mailing__content-e"><input type="email" class="tabs-mailing__content-e"
+										placeholder="Ваша email адреса"></div>
+							</div>
+							<div id="tab_02-mailing" class="tabs-mailing__content">
+								<div class="tabs-mailing__content-p"><input type="tel" class=" phone"
+										placeholder="Ваш номер телефону"></div>
+							</div>
+						</div>
+					</div>
+					<div class="mailing__note">Не більше 1 повідомлення в тиждень. Ніякого спаму. Ви зможете відписатись
+						будь-коли забажаєте.</div>
+				</div>
+			</div>
+			<div class="special">
+				<div class="special__content">
+					<div class="special__title">Спеціальні пропозиції</div>
+					<div class="special__items">
+						<div class="special__item item-special">
+							<div class="item-special__content">
+								<div class="item-special__title">Весілля за кордоном</div>
+								<div class="item-special__text">Перетворіть своє весілля на незабутню казку, неповторне дійство
+									в одному з найчарівніших куточків світу.</div>
+								<a href="#" class="item-special__link">Дізнатися більше</a>
+							</div>
+						</div>
+						<div class="special__item item-special">
+							<div class="item-special__content">
+								<div class="item-special__title">Shopping тури в Дубаї</div>
+								<div class="item-special__text">Перетворіть своє весілля на незабутню казку, неповторне дійство
+									в одному з найчарівніших куточків світу.</div>
+								<a href="#" class="item-special__link">Дізнатися більше</a>
+							</div>
+						</div>
+					</div>
+					<div class="special__slider slider-special">
+						<div class="slider-special-item item-slider">
+							<div class="item-special__content">
+								<div class="item-special__title">Весілля за кордоном</div>
+								<div class="item-special__text">Перетворіть своє весілля на незабутню казку, неповторне дійство
+									в одному з найчарівніших куточків світу.</div>
+								<a href="#" class="item-special__link">Дізнатися більше</a>
+							</div>
+						</div>
+						<div class="slider-special-item item-slider">
+							<div class="item-special__content">
+								<div class="item-special__title">Shopping тури в Дубаї</div>
+								<div class="item-special__text">Перетворіть своє весілля на незабутню казку, неповторне дійство
+									в одному з найчарівніших куточків світу.</div>
+								<a href="#" class="item-special__link">Дізнатися більше</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__title">Відгуки туристів</div>
+					<div class="reviews__slider slider">
+						<div class="slider__item">
+							<div class="slider__author">Наталія (25)</div>
+							<div class="slider__review">Хороший отдых начинается с планирования. А
+								планирование требует
+								времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от
+								процесса его планирования. Хороший отдых начинается с планирования. А планирование требует
+								времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от
+								процесса его планирования.</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__author">Олександр (43)</div>
+							<div class="slider__review">Хороший отдых начинается с планирования. А
+								планирование требует
+								времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от
+								процесса его планирования. Хороший отдых начинается с планирования. А планирование требует
+								времени, знаний и опыта.</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__author">Антоніна (34)</div>
+							<div class="slider__review">Хороший отдых начинается с планирования. А
+								планирование требует
+								времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от
+								процесса его планирования. Хороший отдых начинается с планирования. А планирование требует
+								времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от
+								процесса его планирования.Хороший отдых начинается с планирования. А планирование требует
+								времени, знаний и опыта. Хороший отдых начинается с планирования. А планирование требует
+								времени, знаний и опыта.</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__author">Миколай (58)</div>
+							<div class="slider__review">Хороший отдых начинается с планирования. А
+								планирование требует
+								времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от
+								процесса его планирования. Хороший отдых начинается с планирования. А планирование требует
+								времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от
+								процесса его планирования.Хороший отдых начинается с планирования. А планирование требует
+								времени, знаний и опыта.</div>
+						</div>
+						<div class="slider__item">
+							<div class="slider__author">Олександр (29)</div>
+							<div class="slider__review">Хороший отдых начинается с планирования. А
+								планирование требует
+								времени, знаний и опыта. Мы гарантируем вам удовольствие не только от отдыха, но еще до того, от
+								процесса его планирования. Хороший отдых начинается с планирования. А планирование требует
+								времени, знаний и опыта. Хороший отдых начинается с планирования. А планирование требует
+								времени, знаний и опыта.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- @import "footer.html" -->
+	</div>
+	<!-- @import "popup.html" -->
+	<!-- @import "js.html" -->
+</body>
+
+</html>
