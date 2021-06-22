@@ -283,7 +283,7 @@
 @media (max-width: 425px) {
 	.datepickers-container {
 		top: 40px;
-		left: -263px;
+		left: -270px;
 	}
 	.datepicker--cell {
 		height: 25px;
@@ -295,7 +295,7 @@
 	}
 	.datepickers-container {
 		top: 40px;
-		left: -258px;
+		left: -265px;
 	}
 }
 
